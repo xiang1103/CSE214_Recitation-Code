@@ -16,6 +16,7 @@ def insert(root, key):
         root.left= insert(root.left, key)
     else: 
         root.right= insert(root.right,key)
+
 def preorder_trav(root):
     if (root!=None):
         print(root.val, end="->")
@@ -23,6 +24,8 @@ def preorder_trav(root):
         preorder_trav(root.right)
     else:
         return root 
+
+
 def inorder (root):
     if root is not None: 
         inorder(root.left)
@@ -39,11 +42,16 @@ def postorder(root):
         return root 
 
 def main(): 
-    root= Tree(5)
-    insert(root, 2)
-    #root.insert(7)
-    #root.inorder() 
-    #print(root.val)
+    root= Tree(5) 
+    insert (root, 40)
+    insert (root, 30)
+    # insert (root, 25)
+    # insert (root, 35)
+    # insert (root, 50)
+    # insert (root, 45)
+    # insert (root, 60)
+    #preorder_trav(root)
+    print (root.right.val)
 
 if __name__ == "__main__":
     main() 
