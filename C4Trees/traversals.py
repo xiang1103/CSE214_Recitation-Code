@@ -3,7 +3,7 @@ from tree import *
 def main():
     root= Tree(5) 
     insert (root, 40)
-    #hello 
+    #hello j
     insert (root, 30)
     insert (root, 25)
     insert (root, 35)
